@@ -13,65 +13,65 @@ Event::on('GameModeInit', function() {
 Event::on('GameModeExit', function() {
 
 });
-Event::on('PlayerRequestClass', function($playerid, $classid) {
-	$playerid->setPos(playerid, 1958.3783, 1343.1572, 15.3746);
-	$playerid->camera->setPos(1958.3783, 1343.1572, 15.3746);
-	$playerid->camera->setLookAt(1958.3783, 1343.1572, 15.3746);
+Event::on('PlayerRequestClass', function($player, $classid) {
+	$player->setPos(player, 1958.3783, 1343.1572, 15.3746);
+	$player->camera->setPos(1958.3783, 1343.1572, 15.3746);
+	$player->camera->setLookAt(1958.3783, 1343.1572, 15.3746);
 });
 
-Event::on('PlayerConnect', function($playerid) {
-
-});
-
-Event::on('PlayerDisconnect', function($playerid, $reason) {
+Event::on('PlayerConnect', function($player) {
 
 });
 
-Event::on('PlayerSpawn', function($playerid) {
+Event::on('PlayerDisconnect', function($player, $reason) {
 
 });
 
-Event::on('PlayerDeath', function($playerid, $killerid, $reason) {
+Event::on('PlayerSpawn', function($player) {
 
 });
 
-Event::on('VehicleSpawn', function($vehicleid) {
+Event::on('PlayerDeath', function($player, $killer, $reason) {
 
 });
 
-Event::on('VehicleDeath', function($vehicleid, $killerid) {
+Event::on('VehicleSpawn', function($vehicle) {
 
 });
 
-Event::on('PlayerText', function($playerid, $text) {
+Event::on('VehicleDeath', function($vehicle, $killer) {
 
 });
 
-Event::on('PlayerEnterVehicle', function($playerid, $vehicleid, $ispassenger) {
+Event::on('PlayerText', function($player, $text) {
 
 });
 
-Event::on('PlayerExitVehicle', function($playerid, $vehicleid) {
+Event::on('PlayerEnterVehicle', function($player, $vehicle, $ispassenger) {
 
 });
 
-Event::on('PlayerStateChange', function($playerid, $newstate, $oldstate) {
+Event::on('PlayerExitVehicle', function($player, $vehicle) {
 
 });
 
-Event::on('PlayerEnterCheckpoint', function($playerid) {
+Event::on('PlayerStateChange', function($player, $newstate, $oldstate) {
 
 });
 
-Event::on('PlayerLeaveCheckpoint', function($playerid) {
+Event::on('PlayerEnterCheckpoint', function($player) {
 
 });
 
-Event::on('PlayerEnterRaceCheckpoint', function($playerid) {
+Event::on('PlayerLeaveCheckpoint', function($player) {
 
 });
 
-Event::on('PlayerLeaveRaceCheckpoin', function($playerid) {
+Event::on('PlayerEnterRaceCheckpoint', function($player) {
+
+});
+
+Event::on('PlayerLeaveRaceCheckpoin', function($player) {
 
 });
 
@@ -79,7 +79,7 @@ Event::on('RconCommand', function($cmd) {
 
 });
 
-Event::on('PlayerRequestSpawn', function($playerid) {
+Event::on('PlayerRequestSpawn', function($player) {
 
 });
 
@@ -87,39 +87,39 @@ Event::on('ObjectMoved', function($objectid) {
 
 });
 
-Event::on('PlayerObjectMoved', function($playerid, $objectid) {
+Event::on('PlayerObjectMoved', function($player, $objectid) {
 
 });
 
-Event::on('PlayerPickUpPickup', function($playerid, $pickupid) {
+Event::on('PlayerPickUpPickup', function($player, $pickupid) {
 
 });
 
-Event::on('VehicleMod', function($playerid, $vehicleid, $componentid) {
+Event::on('VehicleMod', function($player, $vehicle, $componentid) {
 
 });
 
-Event::on('VehiclePaintjob', function($playerid, $vehicleid, $paintjobid) {
+Event::on('VehiclePaintjob', function($player, $vehicle, $paintjobid) {
 
 });
 
-Event::on('VehicleRespray', function($playerid, $vehicleid, $color1, $color2) {
+Event::on('VehicleRespray', function($player, $vehicle, $color1, $color2) {
 
 });
 
-Event::on('PlayerSelectedMenuRow', function($playerid, $row) {
+Event::on('PlayerSelectedMenuRow', function($player, $row) {
 
 });
 
-Event::on('PlayerExitedMenu', function($playerid) {
+Event::on('PlayerExitedMenu', function($player) {
 
 });
 
-Event::on('PlayerInteriorChange', function($playerid, $newinteriorid, $oldinteriorid) {
+Event::on('PlayerInteriorChange', function($player, $newinteriorid, $oldinteriorid) {
 
 });
 
-Event::on('PlayerKeyStateChange', function($playerid, $newkeys, $oldkeys) {
+Event::on('PlayerKeyStateChange', function($player, $newkeys, $oldkeys) {
 
 });
 
@@ -127,30 +127,30 @@ Event::on('RconLoginAttempt', function($ip, $password, $success) {
 
 });
 
-Event::on('PlayerUpdate', function($playerid) {
+Event::on('PlayerUpdate', function($player) {
 
 });
 
-Event::on('PlayerStreamIn', function($playerid, $forplayerid) {
+Event::on('PlayerStreamIn', function($player, $forplayer) {
 
 });
 
-Event::on('PlayerStreamOut', function($playerid, $forplayerid) {
+Event::on('PlayerStreamOut', function($player, $forplayer) {
 
 });
 
-Event::on('VehicleStreamIn', function($vehicleid, $forplayerid) {
+Event::on('VehicleStreamIn', function($vehicle, $forplayer) {
 
 });
 
-Event::on('VehicleStreamOut', function($vehicleid, $forplayerid) {
+Event::on('VehicleStreamOut', function($vehicle, $forplayer) {
 
 });
 
-Event::on('DialogResponse', function($playerid, $dialogid, $response, $listitem, $inputtext) {
+Event::on('DialogResponse', function($player, $dialogid, $response, $listitem, $inputtext) {
 
 });
 
-Event::on('PlayerClickPlayer', function($playerid, $clickedplayerid, $source) {
+Event::on('PlayerClickPlayer', function($player, $clickedplayer, $source) {
 
 });
