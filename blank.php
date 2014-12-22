@@ -1,28 +1,8 @@
-// This is a comment
-// uncomment the line below if you want to write a filterscript
-// define("FILTERSCRIPT", "THIS_IS");
 require 'core/bootstrap.php';
-
-if(defined("FILTERSCRIPT")) {
-
-	Event::on('FilterScriptInit', function() {
-		echo "\n--------------------------------------";
-		echo " Blank Filterscript by your name here";
-		echo "--------------------------------------\n";
-	});
-	Event::on('FilterScriptExit', function() {
-
-	});
-
-}else{
-
-	main()
-	{
-		echo "\n----------------------------------";
-		echo " Blank Gamemode by your name here";
-		echo "----------------------------------\n";
-	}
-
+main() {
+	echo "\n----------------------------------";
+	echo " Blank Gamemode by your name here";
+	echo "----------------------------------\n";
 }
 
 Event::on('GameModeInit', function() {
