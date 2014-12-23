@@ -13,7 +13,7 @@ Event::on('GameModeInit', function() {
 Event::on('GameModeExit', function() {
 
 });
-Event::on('PlayerRequestClass', function($player, $classid) {
+Event::on('PlayerRequestClass', function($player, $class) {
 	$player->setPos(player, 1958.3783, 1343.1572, 15.3746);
 	$player->camera->setPos(1958.3783, 1343.1572, 15.3746);
 	$player->camera->setLookAt(1958.3783, 1343.1572, 15.3746);
@@ -83,11 +83,11 @@ Event::on('PlayerRequestSpawn', function($player) {
 
 });
 
-Event::on('ObjectMoved', function($objectid) {
+Event::on('ObjectMoved', function($object) {
 
 });
 
-Event::on('PlayerObjectMoved', function($player, $objectid) {
+Event::on('PlayerObjectMoved', function($player, $object) {
 
 });
 
