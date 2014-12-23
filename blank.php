@@ -4,6 +4,7 @@ Event::on('GameModeInit', function() {
 	echo "\n----------------------------------";
 	echo " Blank Gamemode by your name here";
 	echo "----------------------------------\n";
+	
 	// Don't use these lines if it's a filterscript
 	Server::setGameModeText("Blank Script");
 	Server::addPlayerClass(0, 1958.3783, 1343.1572, 15.3746, 269.1425, 0, 0, 0, 0, 0, 0);
