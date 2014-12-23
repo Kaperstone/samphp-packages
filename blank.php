@@ -14,7 +14,7 @@ Event::on('GameModeExit', function() {
 
 });
 Event::on('PlayerRequestClass', function($player, $class) {
-	$player->setPos(player, 1958.3783, 1343.1572, 15.3746);
+	$player->setPos(1958.3783, 1343.1572, 15.3746);
 	$player->camera->setPos(1958.3783, 1343.1572, 15.3746);
 	$player->camera->setLookAt(1958.3783, 1343.1572, 15.3746);
 });
