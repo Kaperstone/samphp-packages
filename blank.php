@@ -5,6 +5,7 @@ Event::on('GameModeInit', function() {
 	echo "----------------------------------";
 	echo "Blank Gamemode by your name here";
 	echo "----------------------------------";
+	echo "Proudly converted for PHP by Kaperstone"
 	
 	// Don't use these lines if it's a filterscript
 	Server::setGameModeText("Blank Script");
