@@ -1,6 +1,7 @@
 require 'core/bootstrap.php';
 
 Event::on('GameModeInit', function() {
+
 	echo "\n----------------------------------";
 	echo " Blank Gamemode by your name here";
 	echo "----------------------------------\n";
